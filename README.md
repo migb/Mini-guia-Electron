@@ -84,6 +84,8 @@ Lo primero que haremos sera instanciar la ventana que contendra nuestra aplicaci
           
           <!--En caso de requerir jQuery, esta es la manera que debe ser llamado en Electron-->
           <script>window.$ = window.jQuery = require ('./ruta/hacia/jQuery/jquery-2.2.3.min.js')</script>
+	  <!--O podemos añadir esta solucion generica para todas las bibliotecas de terceros-->
+	  <script>if (window.module) module = window.module;</script>
       </body>
       </html>
       
